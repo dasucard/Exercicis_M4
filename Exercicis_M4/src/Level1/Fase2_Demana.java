@@ -2,6 +2,8 @@ package Level1;
 
 import java.util.*;
 
+import javax.swing.JOptionPane;
+
 public class Fase2_Demana {
 
 	public static void main(String[] args) {
@@ -50,30 +52,37 @@ public class Fase2_Demana {
 			
 		}
 		
-		System.out.println("Introduce plato que deseas comer, por favor");
-		
-		Scanner entrada  =new Scanner(System.in);
-		
-		String quiero= entrada.nextLine();
-		
-		/*System.out.println("¿Quieres seguir pidiendo? 1:Si / 0:No");
-		
-		int seguir= entrada.nextInt();*/
-		
-		for (int i=0 ; i<Cuenta.size(); i++){
 			
-			while (quiero == Menú[i]){
-				
-				Cuenta.add(quiero);
+		System.out.println();
 			
-			}
-				
+		int	seguir=1;
+		
+		int i=0;
+		
+		System.out.println("Pedido de: ");
+			
+		while (seguir==1){
+			
+			String quiero = JOptionPane.showInputDialog("Escribe el plato que deseas, por favor: ");
+			
+			Cuenta.add(quiero);
+			
+			System.out.println(Cuenta.get(i));
+			
+			i++;
+					
+			seguir= Integer.parseInt(JOptionPane.showInputDialog("¿Quieres seguir pidiendo? 1:Si / 0:No"));
+			
 		}
 		
-		System.out.println(Cuenta);
-		
-		
-				 
+		System.out.println();
+		 
+		System.out.println("Fin del pedido");
+			
 	}
+		
 
+				 
 }
+
+
