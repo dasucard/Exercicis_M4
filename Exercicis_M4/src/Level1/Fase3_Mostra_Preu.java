@@ -82,32 +82,26 @@ public class Fase3_Mostra_Preu {
 		int total=0;
 		
 		for (int j=0; j<Cuenta.size(); j++){
-			
-			for (int k=0; k<Menú.length; k++){
-				
-				if (Cuenta.get(j).equalsIgnoreCase(Menú[k])){
+						
+				for (String i1 : diccionari.keySet()){
 					
-					 /*total =diccionari.get(k);
-					 
-					 total= total + diccionari.get(k);/* Me da problemas, tengo que pensarla bien.mmm
-				}
-				/*else{
+					if (Cuenta.get(j).equalsIgnoreCase(i1)){
+
+					      
+					      total = total + diccionari.get(i1);
+					      
+						
+					}	
 					
-					System.out.println("El plato no se encuentra en la carta, lo sentimos vuelva mañana");
-					
-				}*/
-				
 			}
-			
-			
-			
+		
 		}
 		
-		System.out.println(total);
+		System.out.println("El precio a pagar es de: " + total + "€");
 		
 		
 		}
 
 	}
 
-}
+
