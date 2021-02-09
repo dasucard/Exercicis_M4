@@ -89,7 +89,7 @@ public class Fase3_Mostra_Preu {
 					
 					 /*total =diccionari.get(k);
 					 
-					 total= total + diccionari.get(k);/* Me da problemas, tengo que pensarla bien.
+					 total= total + diccionari.get(k);/* Me da problemas, tengo que pensarla bien.mmm
 				}
 				/*else{
 					
@@ -106,7 +106,7 @@ public class Fase3_Mostra_Preu {
 		System.out.println(total);
 		
 		
-		
+		}
 
 	}
 

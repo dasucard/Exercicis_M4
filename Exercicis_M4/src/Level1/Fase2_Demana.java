@@ -8,7 +8,7 @@ public class Fase2_Demana {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		//Declaración Array de los platos.
 		String Menú[] = new String[6];
 				
@@ -78,7 +78,8 @@ public class Fase2_Demana {
 		System.out.println();
 		 
 		System.out.println("Fin del pedido");
-			
+
+		
 	}
 		
 
