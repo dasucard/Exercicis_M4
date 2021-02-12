@@ -71,6 +71,7 @@ public class Revisió_Comanda {
 			
 			int j=0;
 			
+			
 			while (seguir==1){	
 											
 								
@@ -82,11 +83,11 @@ public class Revisió_Comanda {
 				for (String i1 : diccionari.keySet()){
 											
 					if (Cuenta.get(j).equalsIgnoreCase(i1)){
-										   
+								
 						total = total + diccionari.get(i1);	
 						
 						System.out.println(Cuenta.get(j));
-											
+									
 											
 					}
 
@@ -94,14 +95,30 @@ public class Revisió_Comanda {
 				}
 								
 				j++;
-								
-				seguir= Integer.parseInt(JOptionPane.showInputDialog("¿Quieres seguir pidiendo? 1:Si / 0:No"));		
+				
+					
+						
+					seguir= Integer.parseInt(JOptionPane.showInputDialog("¿Quieres seguir pidiendo? 1:Si / 0:No"));
+
+					
+				
+					if (seguir == 0){
+						
+						System.out.println("Fin del pedido");
+					}
+					
+					else if (seguir !=0 && seguir !=1){
+						
+						throw new ArithmeticException("Numero mal tecleado.");
+					}
+				
+						
 			} 
 					
 			
 		}catch (Exception e){
 			
-			System.out.println("Algo ha ido mal.");
+			System.out.println("Algo ha ido mal, vuelve a intentarlo");
 		}finally {
 			
 			System.out.println();
