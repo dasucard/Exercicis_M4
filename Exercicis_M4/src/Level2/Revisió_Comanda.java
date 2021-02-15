@@ -79,8 +79,9 @@ public class Revisió_Comanda {
 								
 				Cuenta.add(quiero);
 								
-				
+				//Nose como hacer para que me diga que el producto no existe, ya que en cada bucle el string de la lista es evaluado con cada string del hashMap y me devuelve todas las posibildades en las que no son strings iguales.
 				for (String i1 : diccionari.keySet()){
+					
 											
 					if (Cuenta.get(j).equalsIgnoreCase(i1)){
 								
@@ -109,7 +110,7 @@ public class Revisió_Comanda {
 					
 					else if (seguir !=0 && seguir !=1){
 						
-						throw new ArithmeticException("Numero mal tecleado.");
+						throw new NumberFormatException("Numero mal tecleado.");
 					}
 				
 						
